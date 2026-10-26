@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char str[] = "Hello World";
+    int len = strlen(str);
+
+    printf("Original: %s\n", str);
+    printf("Reversed: ");
+
+    // Loop backwards from the last valid character index to 0
+    for (int i = len - 1; i >= 0; i--) {
+        putchar(str[i]);
+    }
+    printf("\n");
+
+    return 0;
+}
